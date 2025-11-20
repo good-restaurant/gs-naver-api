@@ -11,7 +11,7 @@
 ---
 
 
-## 🧹 1️⃣ 데이터 전처리 (`01_preprocess.py`)
+## 1️⃣ 데이터 전처리 (`01_preprocess.py`)
 > 원본 엑셀(`모범음식점_리스트_지오코딩_4326.xlsx`)을 정제하여 `restaurant_clean.csv`로 저장합니다.
 - 중복 제거 (`업소명 + 주소`)
 - 결측치 보완 (`category ← menu`)
@@ -22,7 +22,7 @@
 
 ---
 
-## 🔍 2️⃣ 네이버 API 연동 (`02_naver_api_fetch.py`)
+## 2️⃣ 네이버 API 연동 (`02_naver_api_fetch.py`)
 > 네이버 Local API를 사용해 `restaurant_name + address`로 검색 후,  
 > `category`, `telephone`, `link`, `mapx`, `mapy` 정보를 매칭합니다.
 
@@ -34,7 +34,7 @@
 
 ---
 
-## 🕸️ 3️⃣ 네이버 플레이스 크롤링 (`03_place_crawling.py`)
+## 3️⃣ 네이버 플레이스 크롤링 (`03_place_crawling.py`)
 > Selenium을 이용하여 네이버 플레이스의 `ID`를 수집합니다.
 
 - `place_id` 크롤링
@@ -44,7 +44,7 @@
 
 ---
 
-## 🕸️ 4️⃣ 네이버 메뉴·가격 크롤링 (`04_menu_crawling.py`)
+## 4️⃣ 네이버 메뉴·가격 크롤링 (`04_menu_crawling.py`)
 > Selenium을 이용하여 네이버 플레이스의 메뉴명과 가격을 수집합니다
 
 - 텍스트 기반 메뉴 섹션 파싱
@@ -58,7 +58,7 @@
 
 ---
 
-## 🕸️ 5️⃣ 메뉴·가격 전처리 (05_menu_preprocess.py)
+## 5️⃣ 메뉴·가격 전처리 (05_menu_preprocess.py)
 > 크롤링된 menu 텍스트에서 메뉴명/가격을 자동 분리하고 csv로 저장합니다.
 
 - 메뉴 문자열에서 가격 패턴 자동 식별
