@@ -1,3 +1,4 @@
+# ===== 환경 세팅 (Colab 한정) =====
 # !pip install selenium
 
 import re
